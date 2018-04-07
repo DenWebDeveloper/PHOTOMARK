@@ -1,0 +1,124 @@
+.services {
+  margin-top: 160px;
+}
+
+.services__line:before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  top: -2px;
+  left: calc(50% - 60px);
+  background-color: #7dadd3;
+}
+
+.services__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(378px, 1fr));
+  grid-template-rows: 302px 120px 302px;
+  grid-gap: 18px;
+}
+
+.services__item {
+  display: flex;
+  padding: 0 55px;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255,255,255,0.3);
+  background: transparent top left/cover no-repeat;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+.services__item > *:not(h2) {
+  display: none;
+}
+
+.services__item:hover > * {
+  display: block;
+}
+
+.services__item--portraits,
+.services__item--fashion {
+  grid-row-start: span 2;
+}
+
+.services__item--love-story {
+  background-image: url(../img/services-love-story.jpg);
+  grid-row-end: span 2;
+}
+
+.services__item--portraits {
+  background-image: url(../img/services-portraits.jpg);
+}
+
+.services__item--children {
+  background-image: url(../img/services-children.jpg);
+}
+
+.services__item--fashion {
+  background-image: url(../img/services-fashion.jpg);
+}
+
+.services__item--family {
+  background-image: url(../img/services-family.jpg);
+}
+
+.services__item--wedding {
+  background-image: url(../img/services-wedding.jpg);
+}
+
+.services__item-title {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.services__item-small {
+  font-size: 14px;
+  margin-bottom: 35px;
+}
+
+.services__item-paragraph {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 300;
+}
+
+.services__item-link {
+  text-decoration: none;
+  background-color: transparent;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  padding: 12px 50px;
+
+  &:hover {
+    background-color: #fff;
+    color: #1a181c;
+  }
+}
+
+.services__order-photos {
+  margin: 0 auto;
+  margin-top: 40px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  max-width: 242px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #1a181c;
+  border: 2px solid #7dadd3;
+  background-color: transparent;
+  text-transform: uppercase;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}

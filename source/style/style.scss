@@ -1,0 +1,71 @@
+@import "common/media";
+@import "common/normalize";
+@import "common/swiper.min.scss";
+
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #1a181c;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+.display-hidden {
+  display: none;
+}
+
+@import "common/header";
+@import "common/slider";
+
+.block__title {
+  font-weight: 700;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.block__line {
+  border:none;
+  border-top: 1px solid rgba(#cdd6df,0.4);
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 66px;
+    height: 3px;
+    top: -2px;
+    left: 0;
+    background-color: #7dadd3;
+  }
+}
+
+@import "common/about";
+
+
+.section__title {
+  font-weight: 700;
+  text-align: center;
+  font-size: 36px;
+}
+
+.section__line {
+  margin-top: 15px;
+  margin-bottom: 40px;
+  border: none;
+  border-top: 1px solid rgba(205, 214, 223, 0.4);
+  position: relative;
+}
+
+@import "common/services";
+@import "common/portfolio";
+@import "common/reviews";
+@import "common/feedback";
+@import "common/footer";

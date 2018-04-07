@@ -1,0 +1,92 @@
+.feedback {
+  padding-top: 77px;
+  padding-bottom: 80px;
+  background: #6889a4 url(../img/feedback-bg.jpg) center center no-repeat;
+  background-size: 100% auto;
+}
+
+.feedback__wrapper {
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+}
+
+.contacts {
+  max-width: 396px;
+}
+
+.contacts__phone,
+.contacts__email {
+  display: block;
+  font-size: 14px;
+  line-height: 36px;
+  font-weight: 300;
+  color: #fff;
+  text-decoration: none;
+
+  &:hover {
+    font-weight: 700;
+  }
+}
+
+.contacts__fa-phone {
+  transform: rotate(180deg);
+}
+
+.contacts__fa-phone,
+.contacts__fa-email {
+  margin-right: 10px;
+}
+.contacts__paragraph {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+.contacts__map {
+  width: 100%;
+  min-height: 205px;
+}
+
+.write-me {
+  width: 100%;
+  max-width: 675px;
+}
+
+.write-me-form__group {
+  display: flex;
+  flex-direction: column;
+}
+
+.write-me-form__label {
+  font-size: 14px;
+  line-height: 36px;
+}
+
+.write-me-form__input,
+.write-me-form__textarea {
+  margin-bottom: 15px;
+  padding-left: 15px;
+  font-size: 14px;
+  line-height: 36px;
+  color: #fff;
+  max-width: 100%;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.write-me-form__textarea {
+  min-height: 130px;
+}
+
+.write-me-form__submit {
+  width: 100%;
+  max-width: 378px;
+  color: #fff;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  font-size: 14px;
+  line-height: 36px;
+  font-weight: 700;
+  background-color: transparent;
+}
