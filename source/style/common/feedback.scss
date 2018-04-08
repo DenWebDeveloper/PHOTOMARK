@@ -1,6 +1,7 @@
 .feedback {
-  padding-top: 77px;
-  padding-bottom: 80px;
+  margin-top: 140px;
+  padding-top: 42px;
+  padding-bottom: 76px;
   background: #6889a4 url(../img/feedback-bg.jpg) center center no-repeat;
   background-size: 100% auto;
 }
@@ -30,14 +31,20 @@
 }
 
 .contacts__fa-phone {
-  transform: rotate(180deg);
+  transform: rotate(91deg);
 }
 
 .contacts__fa-phone,
 .contacts__fa-email {
   margin-right: 10px;
 }
+
+.contacts__email {
+  margin-bottom: 29px;
+}
+
 .contacts__paragraph {
+  margin-top: 25px;
   font-size: 14px;
   font-weight: 300;
   line-height: 25px;
@@ -45,12 +52,17 @@
 
 .contacts__map {
   width: 100%;
+  max-width: 378px;
   min-height: 205px;
 }
 
 .write-me {
   width: 100%;
   max-width: 675px;
+}
+
+.write-me-form {
+  margin-top:31px;
 }
 
 .write-me-form__group {
@@ -60,7 +72,7 @@
 
 .write-me-form__label {
   font-size: 14px;
-  line-height: 36px;
+  line-height: 27px;
 }
 
 .write-me-form__input,
@@ -76,7 +88,8 @@
 }
 
 .write-me-form__textarea {
-  min-height: 130px;
+  min-height: 123px;
+  margin-bottom: 21px;
 }
 
 .write-me-form__submit {
@@ -86,7 +99,7 @@
   text-transform: uppercase;
   border: 2px solid #fff;
   font-size: 14px;
-  line-height: 36px;
+  line-height: 45px;
   font-weight: 700;
   background-color: transparent;
 }

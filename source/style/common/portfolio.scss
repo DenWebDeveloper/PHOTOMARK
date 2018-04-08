@@ -1,5 +1,5 @@
 .portfolio {
-  margin-top: 160px;
+  margin-top: 150px;
 }
 
 .portfolio__line:before {
@@ -15,7 +15,7 @@
 .portfolio__items {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(279px, 1fr));
-  grid-template-rows: 282px 282px 282px 282px;
+  grid-template-rows: 278px 278px 278px 278px;
   grid-gap: 17px;
 }
 
@@ -118,18 +118,7 @@
 }
 
 .portfolio__show-more {
-  margin: 0 auto;
   margin-top: 40px;
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  max-width: 242px;
-  font-weight: 700;
-  font-size: 14px;
-  color: #1a181c;
-  border: 2px solid #7dadd3;
-  background-color: transparent;
-  text-transform: uppercase;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  max-width: 239px;
+  padding-bottom: 12px;
 }

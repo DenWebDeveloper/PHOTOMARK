@@ -5,12 +5,12 @@
   display: flex;
   justify-content: space-between;
   position: relative;
-  padding: 55px 0 55px 80px;
+  padding: 55px 0 55px 76px;
 
   &:after {
     content: "";
     position: absolute;
-    left: -18px;
+    left: 0;
     top: 0;
     width: 10px;
     height: 442px;
@@ -24,11 +24,12 @@
 }
 
 .about__content {
-  max-width: 540px;
-  padding-top: 55px;
+  max-width: 562px;
+  padding-top: 3px;
 }
 
 .about__paragraph {
   font-size: 15px;
   line-height: 25px;
+  margin-top: 35px;
 }

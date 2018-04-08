@@ -29,6 +29,7 @@ img {
   font-weight: 700;
   font-size: 36px;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .block__line {
@@ -54,14 +55,29 @@ img {
   font-weight: 700;
   text-align: center;
   font-size: 36px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .section__line {
-  margin-top: 15px;
-  margin-bottom: 40px;
   border: none;
   border-top: 1px solid rgba(205, 214, 223, 0.4);
   position: relative;
+  margin-bottom: 40px;
+}
+
+.section__link {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  color: #1a181c;
+  border: 2px solid #7dadd3;
+  background-color: transparent;
+  text-transform: uppercase;
+  padding-top: 15px;
 }
 
 @import "common/services";
