@@ -13,22 +13,19 @@
 }
 
 .portfolio__items {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(279px, 1fr));
-  -ms-grid-columns: 279px 279px 279px 279px;
-  grid-template-rows: 278px 278px 278px 278px;
-  -ms-grid-rows: 278px 278px 278px 278px; /* adjusted */
-  grid-gap: 17px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .portfolio__item {
+  margin-bottom: 16px;
+  min-width: 169px;
+  min-height: 279px;
   position: relative;
-  display: flex;
   padding: 0 55px;
   text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   color: rgba(255, 255, 255, 0.3);
   background: transparent top left/cover no-repeat;
 
@@ -37,6 +34,42 @@
     -webkit-background-size: 110% 110%;
     background-size: 110% 110%;
   }
+}
+
+.portfolio__item-wrapper {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 50%;
+  height: 30%;
+  margin: auto;
+}
+
+.portfolio-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.portfolio-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio__item--woman-dance,
+.portfolio__item--man-town,
+.portfolio__item--woman-flowers {
+  min-height: 572px;
+}
+
+.portfolio__item--woman-flowers,
+.portfolio__item--man-town,
+.portfolio__item--dress-girl {
+  min-width: 465px;
 }
 
 .portfolio__item:hover:before {
@@ -64,29 +97,18 @@
 
 .portfolio__item--woman-dance {
   background-image: url(../img/portfolio-woman-dance.jpg);
-  grid-column: 2/2;
-  grid-row-start: span 2;
-  -ms-grid-row-span: 2;
 }
 
 .portfolio__item--woman-flowers {
   background-image: url(../img/portfolio-woman-flowers.jpg);
-  grid-column-end: span 2;
-  grid-row-start: span 2;
-  -ms-grid-row-span: 2;
-  -ms-grid-column-span: 2;
 }
 
 .portfolio__item--man {
   background-image: url(../img/portfolio-man.jpg);
-  grid-column: 1/2;
-  grid-row: 2/3;
 }
 
 .portfolio__item--man-town {
   background-image: url(../img/portfolio-man-town.jpg);
-  grid-column: 1/3;
-  grid-row: 3/5;
 }
 
 .portfolio__item--girl {
@@ -99,10 +121,6 @@
 
 .portfolio__item--dress-girl {
   background-image: url(../img/portfolio-dress-girl.jpg);
-  grid-column-end: span 2;
-  grid-row-end: span 1;
-  -ms-grid-row-span: 1;
-  -ms-grid-column-span: 1;
 }
 
 .portfolio__item-title {
@@ -118,13 +136,12 @@
   color: #fff;
 
   &:hover {
-    background-color: #fff;
-    color: #1a181c;
+    font-weight: 700;
   }
 }
 
 .portfolio__show-more {
-  margin-top: 40px;
+  margin-top: 23px;
   max-width: 239px;
   padding-bottom: 12px;
 }

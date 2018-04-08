@@ -13,13 +13,12 @@
 }
 
 .services__items {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(378px, 1fr));
-  grid-template-rows: 302px 120px 302px;
-  grid-gap: 18px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .services__item {
+  max-width: 274px;
   display: flex;
   padding: 0 52px;
   text-align: center;
@@ -28,6 +27,9 @@
   align-items: center;
   color: rgba(255,255,255,0.3);
   background: transparent top left/cover no-repeat;
+  min-height: 300px;
+  min-width: 378px - 52 -52;
+  margin-bottom: 18px;
 
   &:hover {
     color: #fff;
@@ -36,6 +38,11 @@
       margin-bottom: 6px;
     }
   }
+}
+
+.services-column {
+  display: flex;
+  flex-direction: column;
 }
 
 .services__item > *:not(h3) {
@@ -47,13 +54,13 @@
 }
 
 .services__item--portraits,
-.services__item--fashion {
-  grid-row-start: span 2;
+.services__item--fashion,
+.services__item--love-story {
+  min-height: 440px;
 }
 
 .services__item--love-story {
   background-image: url(../img/services-love-story.jpg);
-  grid-row-end: span 2;
 }
 
 .services__item--portraits {
@@ -93,6 +100,7 @@
   font-size: 14px;
   line-height: 25px;
   font-weight: 300;
+  max-width: 274px;
 }
 
 .services__item-link {
@@ -113,7 +121,7 @@
 }
 
 .services__order-photos {
-  margin-top: 37px;
+  margin-top: 22px;
   max-width: 242px;
   padding-bottom: 15px;
 }
