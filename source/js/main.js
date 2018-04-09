@@ -6,13 +6,20 @@ new Swiper('.main-slider__container', {
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
-    },
+    }
 });
 
 new Swiper('.reviews-slider', {
     slidesPerView: 2,
+    freeMode: true,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+    breakpoints: {
+        // when window width is <= 900px
+        900: {
+            slidesPerView: 1,
+        }
+    }
 });

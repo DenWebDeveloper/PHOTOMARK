@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between;
   position: relative;
-  padding: 55px 0 55px 76px;
+  padding: 55px 0 55px 6.6%;
 
   &:after {
     content: "";
@@ -16,16 +16,37 @@
     height: 442px;
     background: transparent url(../img/about-line.jpg) top left/cover;
   }
+
+  @include md() {
+    flex-wrap: wrap;
+    padding-left: 0;
+  }
 }
 
 .about__photo {
-  width: 466px;
-  height: 330px;
+  width: 42.5%;
+  height: auto;
+  margin-right: 5px;
+  min-width: 383px;
+
+  @include md() {
+    margin: 0 auto;
+    min-width: 300px;
+    width: auto;
+  }
+
+  @include sm() {
+    min-width: 288px;
+  }
 }
 
 .about__content {
-  max-width: 562px;
+  width: 51.3%;
   padding-top: 3px;
+  @include md() {
+    padding-left: 21px;
+    width: 100%;
+  }
 }
 
 .about__paragraph {

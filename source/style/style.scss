@@ -78,6 +78,11 @@ img {
   background-color: transparent;
   text-transform: uppercase;
   padding-top: 15px;
+
+  &:hover {
+    background-color: #7dadd3;
+    color: #ffffff;
+  }
 }
 
 @import "common/services";

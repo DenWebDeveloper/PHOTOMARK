@@ -29,11 +29,17 @@
   display: flex;
   padding-top: 20px;
   padding-left: 99px;
+  @include media(900px) {
+    padding: 0 10%;
+  }
 }
 
 .reviews-slider__slide:nth-child(even) .reviews-slider__wrapper {
   padding-left: 26px;
   margin-right: 101px;
+  @include media(900px) {
+    padding: 0 10%;
+  }
 }
 
 .reviews-slider__photo-user {

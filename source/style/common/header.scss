@@ -3,6 +3,7 @@
   align-items: center;
   padding: 19.3px 0;
   margin-bottom: 3px;
+  flex-wrap:wrap;
 }
 
 .header-logo {
@@ -46,6 +47,12 @@
   }
 }
 
+.nav {
+  @include media(1140px) {
+    display: none;
+  }
+}
+
 .nav__items {
   display: flex;
 }
@@ -68,8 +75,23 @@
   }
 }
 
+.nav-open {
+  visibility: hidden;
+  position: absolute;
+  left: -9999px;
+  @include media(1140px) {
+    visibility: visible;
+    position: static;
+    left: auto;
+  }
+}
+
 .social {
   margin-left: auto;
+  @include media(660px) {
+    margin: 0 auto;
+    margin-top: 10px
+  }
 }
 
 .social__items {

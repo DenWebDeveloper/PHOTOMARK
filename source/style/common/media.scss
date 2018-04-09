@@ -28,8 +28,15 @@ $screen-lg-max: 1019px;
   }
 }
 
+@mixin media($size) {
+  @media (max-width: #{$size}) {
+    @content;
+  }
+}
+
 
 .container {
   max-width: 1170px;
+  padding: 0 10px;
   margin: 0 auto;
 }

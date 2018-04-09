@@ -21,7 +21,6 @@
 
 .portfolio__item {
   margin-bottom: 16px;
-  min-width: 169px;
   min-height: 279px;
   position: relative;
   padding: 0 55px;
@@ -31,9 +30,14 @@
 
   &:hover {
     color: #fff;
-    -webkit-background-size: 110% 110%;
-    background-size: 110% 110%;
   }
+
+  @include md() {
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+  }
+
 }
 
 .portfolio__item-wrapper {
@@ -51,25 +55,63 @@
 .portfolio-row {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   align-items: flex-start;
+  width: 100%;
+  flex-wrap: wrap;
+
+  @include media(1106px) {
+    justify-content: center;
+  }
 }
 
 .portfolio-column {
   display: flex;
   flex-direction: column;
+  width: 24%;
+  margin-right: 5px;
+
+  @include media(1106px) {
+    min-width: 279px;
+  }
+
+  &--2x {
+    width: 49%;
+    margin-right: 0;
+    margin-left: 5px;
+
+    @include media(1106px) {
+      max-width: 576px;
+      width: 100%;
+    }
+
+    @include media(570px) {
+      width: auto;
+      margin-right: 0;
+    }
+  }
+}
+
+.portfolio-media-jcsb {
+  justify-content: space-between;
+  flex-wrap: nowrap;
+
+  @include md() {
+    flex-wrap: wrap;
+  }
+}
+
+.portfolio-wrap {
+  flex-wrap: wrap;
+
+  @include media(1106px) {
+    justify-content: center;
+  }
 }
 
 .portfolio__item--woman-dance,
 .portfolio__item--man-town,
 .portfolio__item--woman-flowers {
-  min-height: 572px;
-}
-
-.portfolio__item--woman-flowers,
-.portfolio__item--man-town,
-.portfolio__item--dress-girl {
-  min-width: 465px;
+  min-height: 573px;
 }
 
 .portfolio__item:hover:before {
@@ -97,6 +139,10 @@
 
 .portfolio__item--woman-dance {
   background-image: url(../img/portfolio-woman-dance.jpg);
+
+  @include lg () {
+    order: 2;
+  }
 }
 
 .portfolio__item--woman-flowers {
@@ -113,14 +159,25 @@
 
 .portfolio__item--girl {
   background-image: url(../img/portfolio-girl.jpg);
+  width: 29%;
+  @include media(575px) {
+    width: 100%;
+  }
 }
 
 .portfolio__item--little-girl {
   background-image: url(../img/portfolio-litle-girl.jpg);
+  width: 29%;
+
+  @include media(575px) {
+    width: 100%;
+  }
 }
 
 .portfolio__item--dress-girl {
   background-image: url(../img/portfolio-dress-girl.jpg);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .portfolio__item-title {
@@ -134,9 +191,19 @@
   font-size: 14px;
   font-weight: 300;
   color: #fff;
+  opacity: 0.8;
+
+  .fa-angle-right {
+    margin-left: 10px;
+    color: #7dadd3;
+  }
 
   &:hover {
-    font-weight: 700;
+    opacity: 1;
+
+    .fa-angle-right {
+      color: #fff;
+    }
   }
 }
 

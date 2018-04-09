@@ -3,17 +3,29 @@
   padding-top: 42px;
   padding-bottom: 76px;
   background: #6889a4 url(../img/feedback-bg.jpg) center center no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .feedback__wrapper {
   display: flex;
   color: #fff;
   justify-content: space-between;
+
+  @include media(660px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .contacts {
+  margin-right: 20px;
   max-width: 396px;
+
+  @include media(660px) {
+    max-width: 100%;
+    margin-right: 0;
+  }
 }
 
 .contacts__phone,
@@ -54,15 +66,23 @@
   width: 100%;
   max-width: 378px;
   min-height: 205px;
+
+  @include media(660px) {
+    max-width: 100%;
+    min-height: 355px;
+  }
 }
 
 .write-me {
-  width: 100%;
-  max-width: 675px;
+  width: 58%;
+
+  @include media(660px) {
+    width: 100%;
+  }
 }
 
 .write-me-form {
-  margin-top:31px;
+  margin-top: 31px;
 }
 
 .write-me-form__group {
@@ -84,6 +104,12 @@
   max-width: 100%;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.7);
+
+  &:focus {
+    box-shadow: 0 0 5.82px 0.18px rgba(51, 0, 51, 0.24);
+    outline: none;
+    border: none;
+  }
 }
 
 .write-me-form__textarea {
@@ -101,4 +127,15 @@
   line-height: 45px;
   font-weight: 700;
   background-color: transparent;
+
+  &:hover {
+    background-color: #fff;
+    color: #1a181c;
+    cursor: pointer;
+  }
+
+  @include media(660px) {
+    display: block;
+    margin: 0 auto;
+  }
 }

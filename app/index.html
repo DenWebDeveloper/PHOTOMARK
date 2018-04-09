@@ -14,6 +14,7 @@
       <div class="container">
         <div class="header__wrapper">
           <div class="header-logo"><a class="header-logo__link" href="#"><span class="header-logo__text">PhotoMark</span><small class="header-logo__description">Портфолио фотографа</small></a></div>
+          <div class="button section__link nav-open">Меню</div>
           <nav class="nav">
             <ul class="nav__items">
               <li class="nav__item"><a class="nav__link" href="#">Обо мне</a></li>
@@ -112,49 +113,59 @@
             <h2 class="section__title">Портфолио</h2>
             <hr class="section__line">
             <div class="portfolio__items">
-              <div class="portfolio-column">
-                <div class="portfolio__item portfolio__item--wedding">
-                  <div class="portfolio__item-wrapper">
-                    <h3 class="portfolio__item-title">Свадебные</h3><a class="portfolio__item-link" href="#">Смотреть все</a>
-                  </div>
-                </div>
-                <div class="portfolio__item portfolio__item--man">
-                  <div class="portfolio__item-wrapper">
-                    <h3 class="portfolio__item-title">Love Story</h3><a class="portfolio__item-link" href="#">Смотреть все</a>
-                  </div>
-                </div>
-              </div>
-              <div class="portfolio__item portfolio__item--woman-dance">
-                <div class="portfolio__item-wrapper">
-                  <h3 class="portfolio__item-title">Детские</h3><a class="portfolio__item-link" href="#">Смотреть все</a>
-                </div>
-              </div>
-              <div class="portfolio__item portfolio__item--woman-flowers">
-                <div class="portfolio__item-wrapper">
-                  <h3 class="portfolio__item-title">Fashion</h3><a class="portfolio__item-link" href="#">Смотреть все</a>
-                </div>
-              </div>
-              <div class="portfolio__item portfolio__item--man-town">
-                <div class="portfolio__item-wrapper">
-                  <h3 class="portfolio__item-title">Семейные</h3><a class="portfolio__item-link" href="#">Смотреть все</a>
-                </div>
-              </div>
-              <div class="portfolio-column">
-                <div class="portfolio-row">
-                  <div class="portfolio__item portfolio__item--girl">
+              <div class="portfolio-row">
+                <div class="portfolio-column">
+                  <div class="portfolio__item portfolio__item--wedding">
                     <div class="portfolio__item-wrapper">
-                      <h3 class="portfolio__item-title">Свадебные</h3><a class="portfolio__item-link" href="#">Смотреть все</a>
+                      <h3 class="portfolio__item-title">Свадебные</h3><a class="portfolio__item-link" href="#">Смотреть все<i class="fas fa-angle-right"></i></a>
                     </div>
                   </div>
-                  <div class="portfolio__item portfolio__item--little-girl">
+                  <div class="portfolio__item portfolio__item--man">
                     <div class="portfolio__item-wrapper">
-                      <h3 class="portfolio__item-title">Свадебные</h3><a class="portfolio__item-link" href="#">Смотреть все</a>
+                      <h3 class="portfolio__item-title">Love Story</h3><a class="portfolio__item-link" href="#">Смотреть все<i class="fas fa-angle-right"></i></a>
                     </div>
                   </div>
                 </div>
-                <div class="portfolio__item portfolio__item--dress-girl">
-                  <div class="portfolio__item-wrapper">
-                    <h3 class="portfolio__item-title">Свадебные</h3><a class="portfolio__item-link" href="#">Смотреть все</a>
+                <div class="portfolio-column">
+                  <div class="portfolio__item portfolio__item--woman-dance">
+                    <div class="portfolio__item-wrapper">
+                      <h3 class="portfolio__item-title">Детские</h3><a class="portfolio__item-link" href="#">Смотреть все<i class="fas fa-angle-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-column portfolio-column--2x">
+                  <div class="portfolio__item portfolio__item--woman-flowers">
+                    <div class="portfolio__item-wrapper">
+                      <h3 class="portfolio__item-title">Fashion</h3><a class="portfolio__item-link" href="#">Смотреть все<i class="fas fa-angle-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-row portfolio-wrap">
+                <div class="portfolio-column portfolio-column--2x">
+                  <div class="portfolio__item portfolio__item--man-town">
+                    <div class="portfolio__item-wrapper">
+                      <h3 class="portfolio__item-title">Семейные</h3><a class="portfolio__item-link" href="#">Смотреть все<i class="fas fa-angle-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-column portfolio-column--2x">
+                  <div class="portfolio-row portfolio-media-jcsb">
+                    <div class="portfolio__item portfolio__item--girl">
+                      <div class="portfolio__item-wrapper">
+                        <h3 class="portfolio__item-title">Свадебные</h3><a class="portfolio__item-link" href="#">Смотреть все<i class="fas fa-angle-right"></i></a>
+                      </div>
+                    </div>
+                    <div class="portfolio__item portfolio__item--little-girl">
+                      <div class="portfolio__item-wrapper">
+                        <h3 class="portfolio__item-title">Свадебные</h3><a class="portfolio__item-link" href="#">Смотреть все<i class="fas fa-angle-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio__item portfolio__item--dress-girl">
+                    <div class="portfolio__item-wrapper">
+                      <h3 class="portfolio__item-title">Свадебные</h3><a class="portfolio__item-link" href="#">Смотреть все<i class="fas fa-angle-right"></i></a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -243,7 +254,7 @@
                   <label class="write-me-form__label" for="write-me-form__textatea">Сообщения</label>
                   <textarea class="write-me-form__textarea" id="write-me-form__textatea" name="message" required="required"></textarea>
                 </div>
-                <input class="write-me-form__submit" type="submit" value="Отправить сообщение">
+                <button class="write-me-form__submit" type="submit">Отправить сообщение</button>
               </form>
             </div>
           </div>
