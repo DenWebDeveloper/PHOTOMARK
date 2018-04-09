@@ -79,8 +79,16 @@
 .reviews-slider__prev {
   transform: rotate(180deg);
   left: 21px;
+
+  @include media(550px) {
+    left: 10px;
+  }
 }
 
 .reviews-slider__next {
   right: 33px;
+
+  @include media(550px) {
+    right: 10px;
+  }
 }

@@ -47,6 +47,10 @@
   font-size: 33px;
   line-height: 36px;
   font-weight: 300;
+
+  @include media(550px) {
+    left: 20px;
+  }
 }
 
 .main-slider__next,
@@ -68,8 +72,18 @@
 .main-slider__prev {
   left: 16%;
   transform: rotate(180deg);
+
+  @include media(550px) {
+    opacity: 0.5;
+    left: 20px;
+  }
 }
 
 .main-slider__next  {
   left: 19.8%;
+
+  @include media(550px) {
+    opacity: 0.5;
+    left: 70px;
+  }
 }

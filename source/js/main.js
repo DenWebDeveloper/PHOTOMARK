@@ -10,6 +10,7 @@ new Swiper('.main-slider__container', {
 });
 
 new Swiper('.reviews-slider', {
+    autoHeight: true,
     slidesPerView: 2,
     freeMode: true,
     navigation: {
@@ -22,4 +23,16 @@ new Swiper('.reviews-slider', {
             slidesPerView: 1,
         }
     }
+});
+
+const openMenuButton = document.querySelector(".nav-open-button");
+const closeMenuButton = document.querySelector(".nav-close-button");
+let navElement = document.querySelector(".nav");
+
+openMenuButton.addEventListener('click', () => {
+    navElement.classList.toggle('nav-is-open');
+});
+
+closeMenuButton.addEventListener('click', () => {
+    navElement.classList.toggle('nav-is-open');
 });

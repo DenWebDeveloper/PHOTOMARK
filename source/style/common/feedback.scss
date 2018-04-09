@@ -1,7 +1,7 @@
 .feedback {
   margin-top: 140px;
   padding-top: 42px;
-  padding-bottom: 76px;
+  padding-bottom: 73px;
   background: #6889a4 url(../img/feedback-bg.jpg) center center no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -24,6 +24,7 @@
 
   @include media(660px) {
     max-width: 100%;
+    margin-bottom: 60px;
     margin-right: 0;
   }
 }
@@ -97,8 +98,8 @@
 
 .write-me-form__input,
 .write-me-form__textarea {
-  margin-bottom: 15px;
-  padding: 15px;
+  margin-bottom: 9px;
+  padding: 13px;
   font-size: 14px;
   color: #fff;
   max-width: 100%;
@@ -113,8 +114,8 @@
 }
 
 .write-me-form__textarea {
-  min-height: 123px;
-  margin-bottom: 21px;
+  min-height: 104px;
+  margin-bottom: 19px;
 }
 
 .write-me-form__submit {
